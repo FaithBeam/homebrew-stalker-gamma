@@ -12,7 +12,7 @@ This is a homebrew cask to install the [stalker-gamma](https://github.com/FaithB
 
 ```bash
 brew tap FaithBeam/stalker-gamma \
-brew install --cask stalker-gamma
+&& brew install stalker-gamma
 ```
 
 `stalker-gamma` is now an available command.
