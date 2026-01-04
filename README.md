@@ -11,8 +11,8 @@ This is a homebrew cask to install the [stalker-gamma](https://github.com/FaithB
    - The install removes the quarantine attribute from multiple files in the installation and requires your password
 
 ```bash
-brew tap FaithBeam/stalker-gamma \
-&& brew install stalker-gamma
+brew tap FaithBeam/stalker-gamma
+brew install --cask stalker-gamma
 ```
 
 `stalker-gamma` is now an available command.
