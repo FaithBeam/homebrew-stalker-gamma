@@ -1,6 +1,6 @@
 cask "stalker-gamma" do
-  version "1.3.1"
-  sha256 "34ac4e37ca5c1c9e2805b143c8db83592bc05fef6bf37ff1ccb0753af2caf8b0"
+  version "1.4.0"
+  sha256 "75a8cd74c6bc5851b58e2233363fe36047a9ec15a68f622a7f6971881718fcbe"
 
   url "https://github.com/FaithBeam/stalker-gamma-cli/releases/download/#{version}/stalker-gamma+mac.arm64.tar.gz"
   name "stalker-gamma"
