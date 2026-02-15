@@ -4,7 +4,7 @@ cask "stalker-gamma" do
   version "1.10.0"
 
   if Hardware::CPU.arm?
-    sha256 "817bfa01168fc76e90354e0d66003cde1c261e0645d3c7055a6da51dacaedd75"
+    sha256 "3b523f674763374d2cf47c9902acd537d429e67b981d4f674b8456476eda51ba"
   else
     sha256 "a5dc8df97a523800552908429a80084897995ca2e04360ea4800d00f5ed19680"
   end
