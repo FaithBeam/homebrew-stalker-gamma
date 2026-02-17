@@ -1,7 +1,7 @@
 cask "stalker-gamma" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.10.0"
+  version "1.11.0"
 
   if Hardware::CPU.arm?
     sha256 "ce52350442242190ce755b0300444f9c3273d7a146aa727efa3963f213991730"
