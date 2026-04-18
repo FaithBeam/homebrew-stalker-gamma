@@ -1,12 +1,12 @@
 cask "stalker-gamma" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.24.0"
+  version "1.25.0"
 
   if Hardware::CPU.arm?
-    sha256 "42c83ce0124985257fa77f1ea9c3c1d896708dbe4a3792198df775ed0c51f2ad"
+    sha256 "eb2f848cd1564b43cc3403bde7b57d5f10db4bbb2a5d6c68772a7fee4b70a10f"
   else
-    sha256 "5f1e75c3c86b6cf628d0b9e55e18a4c7e77ec7bc6b37e9311fdfb813eba86b33"
+    sha256 "0be6018e89058ca2fc3bcb1176d496ede7bc43b029ae1eef760e0359b905632a"
   end
 
   url "https://github.com/FaithBeam/stalker-gamma-cli/releases/download/#{version}/stalker-gamma+mac.#{arch}.tar.gz"
