@@ -1,12 +1,12 @@
 cask "stalker-gamma" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.35.0"
+  version "1.36.1"
 
   if Hardware::CPU.arm?
-    sha256 "109c3b008ee7d5d49e935c6ea0dece3f1a36ee459ff61b9528af58e9cae35da0"
+    sha256 "689b4001802aa56fb8b1729f5d47c537c41725f77c26625cb44399b7f1bba6a7"
   else
-    sha256 "f304eebefc972dc60b926221c6e60ecfe3e2539463971c966e93cd67e96add97"
+    sha256 "a28fd3d72853b2ef53641500311696f090c47bc9384e21889426129091284cd5"
   end
 
   url "https://github.com/FaithBeam/stalker-gamma-cli/releases/download/#{version}/stalker-gamma+mac.#{arch}.tar.gz"
@@ -19,10 +19,10 @@ cask "stalker-gamma" do
 
   binary "stalker-gamma"
 
-  postflight_steps do
-    on_macos do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/"]
-    end
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-rd", "com.apple.quarantine", "#{staged_path}/"],
+                   print_stderr: false
   end
 
   zap trash: ""
