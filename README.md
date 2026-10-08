@@ -7,10 +7,13 @@ This is a homebrew cask to install the [stalker-gamma](https://github.com/FaithB
 1. Install [homebrew](https://brew.sh/)
 2. Tap this repo `brew tap FaithBeam/stalker-gamma`
 3. Install the stalker-gamma cask `brew install stalker-gamma`
+4. (Optional) install the stalker-gamma-server cask `brew install stalker-gamma`
 
 ```bash
 brew tap FaithBeam/stalker-gamma
 brew install --cask stalker-gamma
+brew install --cask stalker-gamma-server
 ```
 
 `stalker-gamma` is now an available command.
+`stalker-gamma-server` is now an available command.
